@@ -9,21 +9,35 @@
 </head>
 
 <body>
-	<header><h1>PILAF BIOCOOP</h1></header><hr>
+	<header><h1>PILAF BIOCOOP</h1></header>
+	<hr>
 	
 	<main>
-		<i class='fas fa-user-circle'></i>
-		<form id="connexion">
-			<label for="identifiant">Identifiant<span>*</span></label>
-			<input type="text" id="identifiant" name="identifiants" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>	
-			<label for="mot de passe">Mot de passe<span>*</span></label>
-			<input type="password" id="mot de passe" name="mot de passe" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>		
-			<a href="aide.html" target="_blank">Mot de passe oublié ?</a>
-			<a href="home.html" class="button">Se connecter</a>
+		<div class="center">
+			<i class='fas fa-user-circle'></i>
+		</div>
+		<form>
+			<div class="information">
+				<label for="identifiant">Identifiant<span>*</span></label>
+				<input type="text" id="identifiant" name="identifiants" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>	
+			</div>
+			<div class="information">
+				<label for="mot de passe">Mot de passe<span>*</span></label>
+				<input type="password" id="mdp" name="mot de passe" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>		
+			</div>
+			<div class="information">
+				<input type="checkbox" id="checkbox" name="se souvenir de moi">
+				<label for="se souvenir de moi" id="souvenir">Se souvenir de moi</label>
+			</div>
+			<div class="container">
+				<a href="home.html" id="button">Se connecter</a>
+				<a href="aide.html" id="pwd_oublie" target="_blank">Mot de passe oublié?</a>
+			</div>
 		</form>
 	</main>
 	
-	<hr><footer>
+	<hr>
+	<footer>
 		<p>Copyright © 2020. Tous droits réservés.</p>
 	</footer>
 
