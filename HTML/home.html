@@ -4,57 +4,81 @@
 	<title>Societe PILAF_Application</title>
 	
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/home.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
 	<header>
-		<p>PILAF BIOCOP</p>
+		<p id="pilaf">PILAF BIOCOP</p>
 		<h1>Application de gestion</h1>
-		<i class='fas fa-user-circle'></i>
-		<div class="dropdown">
-			<p>Prénom Nom</p>
-			<img src="./images/fleche.png" alt="Flèche">
-			<div class="dropdown-content">
-				<a href="profil.html">Mon profil</a>
-				<a href="main.html">Se déconnecter</a>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="profil.html">Mon profil</a>
+						<a href="main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<hr>
 	
 	<main>
-		<a href="gestion des clients.html"><img src="./images/gestion des clients.png" alt="Gestion des clients"></a>
-		<p>Gestion des clients</p>
-		
-		<a href="fournisseurs.html"><img src="./images/fournisseurs.png" alt="Fournisseurs"></a>
-		<p>Fournisseurs</p>
-		
-		<a href="catalogue produits fournisseurs.html"><img src="./images/catalogue produits fournisseurs.png" alt="Catalogue produits fournisseurs"></a>
-		<p>Catalogue produits fournisseurs</p>
-		
-		<a href="stocks.html"><img src="./images/stocks.png" alt="Stocks"></a>
-		<p>Stocks</p>
-		
-		<a href="achats.html"><img src="./images/achats.png" alt="Achats"></a>
-		<p>Achats</p>
-		
-		<a href="vente.html"><img src="./images/vente.png" alt="Vente"></a>
-		<p>Vente</p>
-		
-		<a href="produits.html"><img src="./images/produits.png" alt="Produits"></a>
-		<p>Produits</p>
-		
-		<a href="horaires et congés.html"><img src="./images/horaires et congés.png" alt="Horaires et congés"></a>
-		<p>Horaires et congés</p>
-		
-		<a href="statistiques.html"><img src="./images/statistiques.png" alt="Statistiques"></a>
-		<p>Statistiques</p>
-		
-		<a href="personnel.html"><img src="./images/personnel.png" alt="Personnel"></a>
-		<p>Personnel</p>
-		<p>Vous êtes connecté en tant que : Patrick Lejeune - Caissier,  le 10 janvier 2021 à 13:55:00</p>
+		<div id="content">
+			<div class="inline">
+				<div class="fonctionnalité">
+					<a href="gestion des clients.html"><i class='fas fa-users'></i></a>
+					<p>Gestion des clients</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="fournisseurs.html" id="fournisseurs"><i class='far fa-handshake'></i></a>
+					<p>Fournisseurs</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="catalogue produits fournisseurs.html"><i class='fas fa-book'></i></a>
+					<p>Catalogue produits fournisseurs</p>
+				</div>	
+				<div class="fonctionnalité">
+					<a href="stocks.html"><i class="fas fa-warehouse"></i></a>
+					<p>Stocks</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="achats.html"><i class='fas fa-cart-arrow-down'></i></a>
+					<p>Achats</p>
+				</div>
+			</div>
+			<div class="inline">
+				<div class="fonctionnalité">
+					<a href="vente.html"><i class="fas fa-tags"></i></a>
+					<p>Vente</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="produits.html"><i class="fas fa-box-open"></i></a>
+					<p>Produits</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="horaires et congés.html"><i class="far fa-calendar-alt"></i></a>
+					<p>Horaires et congés</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="statistiques.html"><i class="fas fa-chart-line"></i></a>
+					<p>Statistiques</p>
+				</div>
+				<div class="fonctionnalité">
+					<a href="personnel.html"><i class="fas fa-user-tie"></i></a>
+					<p>Personnel</p>
+				</div>
+			</div>
+		</div>
 	</main>
+	<p id="info_connexion">Vous êtes connecté en tant que: Patrick Lejeune - Caissier,  le 10 janvier 2021 à 13:55:00</p>
 	
 	<hr>
 	<footer>

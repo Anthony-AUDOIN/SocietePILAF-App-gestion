@@ -1,14 +1,19 @@
-body {
-	
+main {
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 h1, footer {
 	text-align:center;
 }
 
-main {
+footer p {
+	margin: 1%;
+}
+
+#connexion {
 	width: 500px;
-	margin: 3.5% auto 3.5% auto;
+	margin: auto;
 	border: solid green;
 }
 
@@ -20,6 +25,7 @@ i {
 	font-size: 100px;
 	margin: 3%;
 	display: block;
+	color: #82b74b;
 }
 
 form {
