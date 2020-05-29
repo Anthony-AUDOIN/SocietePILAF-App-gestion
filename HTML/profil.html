@@ -4,75 +4,83 @@
 	<title>Societe PILAF_Application</title>
 	
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/profil.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
 	<header>
-		<p>PILAF BIOCOP</p>
+		<p id="pilaf">PILAF BIOCOP</p>
 		<h1>Mon profil</h1>
-		<i class='fas fa-user-circle'></i>
-		<div class="dropdown">
-			<p>Prénom Nom</p>
-			<img src="./images/fleche.png" alt="Flèche">
-			<div class="dropdown-content">
-				<a href="profil.html">Mon profil</a>
-				<a href="main.html">Se déconnecter</a>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="profil.html">Mon profil</a>
+						<a href="main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<hr>
 	
-	<nav>
-		<a href="home.html"><i class='fas fa-home'></i></a>
-		<a href="aide.html" target="_blank">Aide</a>
-	</nav>
-	
 	<main>
-		<div id="profil">
-			<i class="material-icons">add_a_photo</i>
-			<div id="information">
-				<p>Poste : Caissier</p>
-				<p>Civilité : M.</p>
-				<p>Nom : Lejeune</p>
-				<p>Prénom : Patrick</p>
-				<p>Date de naissance : 25 mars 1995</p>
+		<nav>
+			<a href="home.html"><i class='fas fa-home'></i></a>
+			<a href="aide.html" target="_blank">Aide</a>
+		</nav>
+		<div id="content">
+			<div id="profil">
+				<i class="material-icons">add_a_photo</i>
+				<div id="information">
+					<p>Poste : Caissier</p>
+					<p>Civilité : M.</p>
+					<p>Nom : Lejeune</p>
+					<p>Prénom : Patrick</p>
+					<p>Date de naissance : 25 mars 1995</p>
+				</div>
 			</div>
-		</div>
-		<div id="coordonnées">
-			<p>Email : patrick@gmail.com</p>
-			<p>Tél : 01 01 01 01 02</p>
-		</div>
-		<div id="adresse">
-			<p>N° et nom de la voie : 10 avenue du Bois</p>
-			<p>Complément d'adresse :</p>
-			<p>Code postal : 87100</p>
-			<p>Ville : Limoges</p>
-			<p>Pays : France</p>
-		</div>
-		<p>Pour modifier vos données, veuillez vous renseigner auprès de l'administration</p>
-		<div class="button">
-			<input type="submit" value="Enregistrer">
-			<input type="reset" value="Annuler">
-		</div>
-	</main>
-	
-	<aside>
-		<h2>Changer mot de passe</h2>
-		<form id="changer mot de passe">
-			<label for="mdp actuel">Mot de passe actuel<span>*</span></label>
-			<input type="password" id="mdp actuel" name="mdp actuel" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>	
-			<label for="nouveau mdp">Nouveau mot de passe<span>*</span></label>
-			<input type="password" id="nouveau mdp" name="nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>
-			<label for="confirmer nouveau mdp">Confirmer le nouveau mot de passe<span>*</span></label>
-			<input type="password" id="confirmer nouveau mdp" name="confirmer nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>					
+			<div id="coordonnées">
+				<p>Email : patrick@gmail.com</p>
+				<p>Tél : 01 01 01 01 02</p>
+			</div>
+			<div id="adresse">
+				<p>N° et nom de la voie : 10 avenue du Bois</p>
+				<p>Complément d'adresse :</p>
+				<p>Code postal : 87100</p>
+				<p>Ville : Limoges</p>
+				<p>Pays : France</p>
+			</div>
+			<p>Pour modifier vos données, veuillez vous renseigner auprès de l'administration</p>
 			<div class="button">
-				<input type="submit">
+				<input type="submit" value="Enregistrer">
 				<input type="reset" value="Annuler">
 			</div>
-		</form>
-	</aside>
+		</div>
+		
+		<aside>
+			<h2>Changer mot de passe</h2>
+			<form id="changer mot de passe">
+				<label for="mdp actuel">Mot de passe actuel<span>*</span></label>
+				<input type="password" id="mdp actuel" name="mdp actuel" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>	
+				<label for="nouveau mdp">Nouveau mot de passe<span>*</span></label>
+				<input type="password" id="nouveau mdp" name="nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>
+				<label for="confirmer nouveau mdp">Confirmer le nouveau mot de passe<span>*</span></label>
+				<input type="password" id="confirmer nouveau mdp" name="confirmer nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>					
+				<div class="button">
+					<input type="submit">
+					<input type="reset" value="Annuler">
+				</div>
+			</form>
+		</aside>
+	</main>
 	
 	<hr>
 	<footer>
