@@ -1,0 +1,14 @@
+/* Nav */
+#option a:last-child {
+	font-weight: bold;
+}
+
+/* Content */
+#content {
+	width: 100%;
+	margin: 0 1% 0 1%;
+}
+
+
+
+
