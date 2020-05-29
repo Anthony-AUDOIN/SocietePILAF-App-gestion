@@ -33,8 +33,8 @@
 	
 	<main>
 		<nav>
-			<a href="home.html"><i class='fas fa-home'></i></a>
-			<a href="aide.html" target="_blank">Aide</a>
+			<a href="home.html" id="home"><i class='fas fa-home'></i></a>
+			<a href="aide.html" id="aide" target="_blank">Aide</a>
 		</nav>
 		<div id="content">
 			<div id="profil">
@@ -58,7 +58,7 @@
 				<p>Ville : Limoges</p>
 				<p>Pays : France</p>
 			</div>
-			<p>Pour modifier vos données, veuillez vous renseigner auprès de l'administration</p>
+			<p id="indication">Pour modifier vos données, veuillez vous renseigner auprès de l'administration</p>
 			<div class="button">
 				<input type="submit" value="Enregistrer">
 				<input type="reset" value="Annuler">
@@ -67,13 +67,13 @@
 		
 		<aside>
 			<h2>Changer mot de passe</h2>
-			<form id="changer mot de passe">
-				<label for="mdp actuel">Mot de passe actuel<span>*</span></label>
-				<input type="password" id="mdp actuel" name="mdp actuel" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>	
-				<label for="nouveau mdp">Nouveau mot de passe<span>*</span></label>
-				<input type="password" id="nouveau mdp" name="nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>
-				<label for="confirmer nouveau mdp">Confirmer le nouveau mot de passe<span>*</span></label>
-				<input type="password" id="confirmer nouveau mdp" name="confirmer nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Veuillez renseigner ce champ" required>					
+			<form>
+				<label for="mdp_actuel">Mot de passe actuel<span>*</span></label>
+				<input type="password" id="mdp_actuel" name="mdp actuel" pattern="[A-zÀ-ú0-9]*" title="Ne contient que des lettres et des chiffres" required>	
+				<label for="nouveau_mdp">Nouveau mot de passe<span>*</span></label>
+				<input type="password" id="nouveau_mdp" name="nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Ne contient que des lettres et des chiffres" required>
+				<label for="confirmer_nouveau_mdp">Confirmer le nouveau mot de passe<span>*</span></label>
+				<input type="password" id="confirmer_nouveau_mdp" name="confirmer nouveau mdp" pattern="[A-zÀ-ú0-9]*" title="Ne contient que des lettres et des chiffres" required>					
 				<div class="button">
 					<input type="submit">
 					<input type="reset" value="Annuler">
