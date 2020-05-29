@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Societe PILAF_Application</title>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/gestion_des_clients.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+	<header>
+		<p id="pilaf">PILAF BIOCOP</p>
+		<h1>Gestion des clients</h1>
+		<div id="right">
+			<div id="avatar">
+				<i class='fas fa-user-circle'></i>
+			</div>
+			<div id="bas_avatar">
+				<p>Patrick Lejeune</p>
+				<div id="dropdown">
+					<i class="fas fa-chevron-down"></i>
+					<div id="dropdown-content">
+						<a href="profil.html">Mon profil</a>
+						<a href="main.html">Se déconnecter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<hr>
+	
+	<main>
+		<nav>
+			<div id="option">
+				<a href="gestion_des_clients.html">Consultation client</a>
+				<a href="gestion_des_clients_création.html">Création client</a>
+				<a href="gestion_des_clients_modification.html">Modification client</a>
+			</div>
+			<div id="option2">
+				<a href="home.html" id="home"><i class='fas fa-home'></i></a>
+				<a href="aide.html" id="aide" target="_blank">Aide</a>
+			</div>
+		</nav>
+		
+		<div id="content">
+			<div id="top-container">
+				<div id="search-container">
+					<input type="text" placeholder="Recherche client..." name="recherche">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</div>
+				<div id="tag">
+					<p>CP: 87000</p>
+					<p>Décroissant</p>
+					<p>Année adhésion: 2019</p>
+				</div>
+			</div>
+			
+			
+			<div id="tab-container">
+				<p id="résultat">20 résultats trouvés</p>
+				<div class="opt">
+					<i class="fas fa-filter"></i>
+					<p>Filtrer</p>
+					<ul class="liste">
+						<li>Numéro</li>
+						<li class="dropdown-menu">Civilité
+							<ul class="dropdown-submenu">
+								<li>M.</li>
+								<li>Mme.</li>
+							</ul>
+						</li>
+						<li>Nom</li>
+						<li>Prénom</li>
+						<li class="dropdown-menu">CP
+							<ul class="dropdown-submenu">
+								<input type="text" placeholder="Saisissez le code postal" name="cp">
+							</ul>
+						</li>
+						<li class="dropdown-menu">Ville
+							<ul class="dropdown-submenu">
+								<input type="text" placeholder="Saisissez la ville" name="ville">
+							</ul>
+						</li>
+						<li class="dropdown-menu">Année adhésion
+							<ul class="dropdown-submenu">
+								<li>2019</li>
+								<li>2020</li>
+								<li>2021</li>
+							</ul>
+						</li>
+						<li class="dropdown-menu">Mois adhésion
+							<ul class="dropdown-submenu">
+								<div id="more-content">
+									<li>Janvier</li>
+									<li>Février</li>
+									<li>Mars</li>
+									<li>Avril</li>
+									<li>Mai</li>
+									<li>Juin</li>
+									<li>Juillet</li>
+									<li>Août</li>
+									<li>Septembre</li>
+									<li>Octobre</li>
+									<li>Novembre</li>
+									<li>Décembre</li>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="opt">
+					<i class="fas fa-sort"></i>
+					<p>Trier</p>
+					<ul class="liste">
+						<li>Croissant</li>
+						<li>Décroissant</li>
+						<li>Plus récent</li>
+						<li>Moins récent</li>
+					</ul>
+				</div>
+				<div class="opt">
+					<i class="fas fa-trash-alt"></i>
+					<p>Supprimer</p>
+				</div>
+			</div>
+			<div id="scroll">
+			  <table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Numéro</th>
+						<th>Civilité</th>
+						<th>Nom</th>
+						<th>Prénom</th>
+						<th>CP</th>
+						<th>Ville</th>
+						<th>N° Carte de fidélité</th>
+						<th>Email</th>
+						<th>Téléphone</th>
+						<th>Date adhésion</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>0000001</td>
+						<td>M.</td>
+						<td>Fernando</td>
+						<td>Eric</td>
+						<td>87000</td>
+						<td>Limoges</td>
+						<td>123456 123456789 1</td>
+						<td>eric255@gmail.com</td>
+						<td>01 23 45 67 89</td>
+						<td>05 mai 2019</td>
+					</tr>
+				</tbody>
+			  </table>
+			</div>
+		</div>
+	</main>
+	
+	<hr>
+	<footer>
+		<p>Copyright © 2020. Tous droits réservés.</p>
+	</footer>
+
+</body>
+</html>
