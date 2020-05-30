@@ -2,6 +2,12 @@ main {
 	display: flex;
 }
 
+body {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
 hr {
 	margin: 0;
 }

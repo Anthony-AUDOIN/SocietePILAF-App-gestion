@@ -2,8 +2,25 @@ main {
 	display: flex;
 }
 
+body {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 hr {
 	margin: 0;
+}
+
+#titre {
+	text-align: center;
+}
+
+h1, h3 {
+	margin: 0 0 2% 0;
+}
+
+h3 {
+	font-weight: normal;
 }
 
 /* Header */
@@ -16,6 +33,7 @@ header {
 
 #pilaf {
 	width: 6%;
+	margin-right: 20%;
 }
 
 #right {
@@ -84,7 +102,7 @@ nav {
 
 nav a {
 	color: black;
-	margin: 0 5% 1% 5%;
+	margin-left: 1%;
 }
 
 #option {
@@ -96,14 +114,21 @@ nav a {
 	text-decoration: none;
 	font-size: 20px;
 	padding: 6%;
-	margin: 1% 0 1% 0;
 	border-bottom: 1px solid;
+}
+
+#option a:hover {
+	background-color: #f1f1f1;
 }
 
 #option2 {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+}
+
+#option2 a {
+	margin: 0 5% 1% 5%;
 }
 
 #home {
