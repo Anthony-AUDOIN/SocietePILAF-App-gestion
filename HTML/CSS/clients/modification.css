@@ -1,14 +1,182 @@
 /* Nav */
-#option a:last-child {
+#option a:nth-child(3) {
 	font-weight: bold;
 }
 
-/* Content */
-#content {
+form {
+	margin: 0 0 1% 0;
 	width: 100%;
-	margin: 0 1% 0 1%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
+p {
+	margin: 0;
+}
 
+/* Gauche */
+#gauche {
+	margin: 0 1% 0 1%;
+	width: 60%;
+	border-right: 1px solid;
+}
 
+#haut {
+	margin: 1% 0 1% 0;
+	display: flex;
+	align-items: flex-end;
+}
 
+#civilité {
+	margin-left: 2%;
+	margin-right: 25%;
+}
+
+#civilité p {
+	margin: 3% 0 3% 0;
+}
+
+#modification p:first-child {
+	margin: 3% 0 3% 0;
+	text-decoration: underline;
+}
+
+#haut i {
+	margin-left: 2%;
+	float: left;
+	border: 1px dashed;
+	font-size: 30px;
+	padding: 7% 6% 7% 6%;
+}
+
+#infos {
+	display: flex;
+	flex-direction: column;
+}
+
+#infos div {
+	margin: 1%;
+	margin-left: 2%;
+}
+
+#infos div:first-child, #infos div:nth-child(2) {
+	display: flex;
+}
+
+#infos div:first-child label, #infos div:nth-child(2) label {
+	width: 10%;
+}
+
+#infos div:first-child input, #infos div:nth-child(2) input {
+	margin-right: 8%;
+	width: 30%;
+}
+
+#infos div:nth-child(3) {
+	display: flex;
+}
+
+div#label {
+	margin: 0 4% 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+div#input {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#infos div:nth-child(3) input {
+	width: 100%;
+	margin: 2% 0 2% 0;
+}
+
+#infos div:nth-child(3) input:nth-child(2), #infos div:nth-child(3) input:nth-child(3) {
+	width: 200%;
+}
+
+#infos div:nth-child(3) label {
+	width: 100%;
+	margin: 5.5% 0 2% 0;
+}
+
+#infos div:last-child input{
+	margin-left: 0;
+}
+
+/* Droite */
+#droite {
+	margin: 1% 1% 0 1%;
+	width: 35%;
+}
+
+#content-droite {
+	margin: auto;
+}
+
+#droite p {
+	margin: 4% 0 4% 0;
+}
+
+#droite input {
+	margin-left: 5%;
+	width: 55%;
+}
+
+#code-barre {
+	margin-top: 2%;
+	text-align: center;
+}
+
+ #droite img {
+	width: 45%;
+ }
+ 
+#document{
+	text-align: center;
+	position: relative;
+}
+
+.fa-file-image {
+	border: 1px dashed;
+	font-size: 30px;
+	padding: 15%;
+}
+
+#droite p:last-child {
+	text-decoration: underline;
+}
+
+/* Enregistrement */
+#enregistrement {
+	padding: 0.5% 1% 0 1%;
+	margin: 0;
+	border-top: 1px solid;;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	justify-content: space-between;
+}
+
+form .button {
+	align-self: center;
+	width: 90%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=submit], input[type=reset] {
+	width: 120px;
+	padding: 5px;
+}
+
+input[type=reset] {
+	margin-left: 8%;
+}
+
+#button {
+	width: 24%;
+}
