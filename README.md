@@ -6,7 +6,7 @@ Ce projet avait pour but d'avoir une gestion de projets avec la segmentation des
 
 ## Pour commencer
 
-Pour voir le projet, vous avez juste a clone le projet et a ouvrir le fichier HTML/index.html
+Pour voir le projet, vous avez juste a aller [ici](https://taconet1.github.io/Application-de-gestion/HTML/main.html).
 
 ## Auteurs
 * **Marie TACONET** _alias_ [@taconet1](https://github.com/taconet1)
